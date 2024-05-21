@@ -1,13 +1,16 @@
-def test_check_serch_repo():
+def test_check_serch_repo(git_hub_api_client):
     """
-    1. Send API request to find the repo named BLA
+    1. Send API request to find the repo named XYZ
     2. Analyse the responce
 
-    `expected result:
+    Expected result:
     number of found repos == SOMENUMBER
     """
 
-repos_list, reaponse = git_hub_api_client.serch_repos("BLA")
+#1. Send API request to find the repo named XYZ
+repos_number, response = git_hub_api_client.serch_repos("XYZ")
 
 #2. Analyse the responce
-response.reise
+response.raise_for_status()
+
+assert repos_number == 10
