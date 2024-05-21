@@ -26,10 +26,15 @@ In order to avoid conflicts during git push
     2.3 Run isort tool.
 
 3. Run the tests
+<<<<<<< HEAD
 
     3.1. Execute `pytest . -s -v` command staying in the root of the framework
 
     3.2 To form a report execute `pytest . -s -v --html=reports/report.html —self-contained-html`
+=======
+3.1 Execute `pytest . -s -v` command staying in the root of the framework
+3.2 To form a report execute `pytest . -s -v --html=reports/report.html —self-contained-html`
+>>>>>>> 95c33b4 (added POM)
 
 # Structure of the framework
 1. tests - folder for tests

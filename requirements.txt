@@ -1,9 +1,9 @@
 # major libs
 pytest==8.2.0
 pytest-html==4.1.1
+selenium==4.21.0
 
 #helpers
-
 
 #code structure
 black==24.4.2
