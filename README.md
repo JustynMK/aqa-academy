@@ -2,9 +2,9 @@
 
 # Coding rules
 ## Excluded folders
-1. .venv folder. 
+1. .venv folder: 
 This folder is excluded. For information on creating a virtual environment using venv, refer to the official Python documentation: https://docs.python.org/3/library/venv.html
-2. Reports 
+2. Reports: 
 Exclude this folder to avoid conflicts during Git pushes.
 
 ## Dependency updates
