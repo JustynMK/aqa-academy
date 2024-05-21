@@ -26,13 +26,12 @@ def test_positive_login():
 
     # Expected result
     error_message = github_login_page.find_error_message()
-
     assert error_message.text() == "AN ERROR OCURED"
 
     # CleanUP
     chromeBrowser.close()
 
-def test_positive_updated(GitHubUI):
+def test_positive_updated(git_hub_ui_app):
     """Summary: Test navigate login attemp
     Steps:
     1. Navigate to login page
@@ -42,16 +41,11 @@ def test_positive_updated(GitHubUI):
     Expected result
     Error saying something appeared
     """
-
     #1. Navigate to login page
-    GitHubUI.open() # webdriver method -BAD
-    GitHubUI.github_login_page.navigate_to()
+    git_hub_ui_app.login_page.navigate_to()
 
     #2. Enter wrong creds
-    GitHubUI.try_login(username='jmkl', password='jmkl')
+    git_hub_ui_app.try_login(username='jmkl', password='jmkl')
 
     # Expected result
-    assert GitHubUI.login_page.check_wrong_creds_message()
-
-    # CleanUP
-    GitHubUI.close() # webdrivemethod BAD
+    assert git_hub_ui_app.login_page.check_wrong_creds_message()

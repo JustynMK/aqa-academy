@@ -1,2 +1,2 @@
-class SignUPPage:
+class SignUpPage:
     pass
