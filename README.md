@@ -1,16 +1,16 @@
 # aqa-academy
 
 # Coding rules
-# Excluded folders
+## Excluded folders
 1. .venv folder. 
 This folder is excluded. For information on creating a virtual environment using venv, refer to the official Python documentation: https://docs.python.org/3/library/venv.html
 2. Reports 
 Exclude this folder to avoid conflicts during Git pushes.
 
-# Dependency updates
+## Dependency updates
 1. Major library versions should be reviewed once per month.
 
-# How to:
+## How to:
 
 1. Setting Up Your Environment:
 
@@ -28,11 +28,11 @@ Exclude this folder to avoid conflicts during Git pushes.
 
 3. Running Tests:
 
-    3.1. Execute pytest command: 'pytest . -s -v` staying from the root of the framework.
+    3.1. Execute pytest command: `pytest . -s -v` staying from the root of the framework.
 
     3.2 Generate a report with pytest: `pytest . -s -v --html=reports/report.html —self-contained-html`
 
-# Structure of the framework
+## Structure of the framework
 1. tests - folder for test files.
 2. reports - folder to storage local reports
 3. src/applications - folder contains system-under-test abstractions.
